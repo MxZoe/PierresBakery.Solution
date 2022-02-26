@@ -1,8 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-using Todo2.Models;
-using System.Collections.Generic;
 
-namespace Todo2.Controllers
+
+namespace PierresBakery.Controllers
 {
   public class HomeController : Controller
   {
