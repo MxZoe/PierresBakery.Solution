@@ -8,6 +8,10 @@
 <h2>@Model["vendor"].Name</h2>
 <h3>Description: @Model["vendor"].Description</h3>
 <h3>Orders:</h3>
+@if (@Model["orders"].Count == 0)
+{
+  <h5>No orders have been added yet!</h5>
+} 
 <ol>
 @foreach (Order orders in @Model["orders"])
 {

@@ -1,0 +1,26 @@
+@{
+  Layout = "_Layout";
+}
+@using PierresBakery.Models;
+
+<h1>Orders: </h1>
+
+<h2>@Model["orders"].Name</h2>
+<h3>Description: @Model["orders"].Description</h3>
+<h3>Orders:</h3>
+@if (@Model["orders"].Count == 0)
+{
+  <h5>No orders have been added yet!</h5>
+} 
+<ol>
+@foreach (Order orders in @Model["orders"])
+{
+  <h3>@orders.Name</h3>
+  <h5><ul><li>@orders.Description</li></ul></h5>
+  <h5><ul><li>@orders.PurchasePrice</li></ul></h5>
+}
+</ol>
+
+
+<a href='/vendors/@Model["vendor"].Id/orders/new'>Add new order</a>
+<a href='/vendors'>View all vendors</a>
