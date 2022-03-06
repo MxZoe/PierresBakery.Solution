@@ -20,7 +20,7 @@ This console application lets a user add their vendors to a list and add which o
 * Go to https://github.com/MxZoe/PierresBakery.Solution to clone or download the project. 
 * To use the program, go to the PierresBakery folder and run "dotnet restore" followed by"dotnet run."
 ## Known Bugs
-Cannot add new orders. Layout needs work
+  There is an off by one error somewhere in the vendor and order Find methods and IDs. It works with some addition and subtration in places but is very janky.
 
 ## License
 
